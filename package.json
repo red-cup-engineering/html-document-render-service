@@ -6,8 +6,7 @@
   "description": "Renders a carrier node tree with resolved CSS into a complete HTML document string. Use when producing styled HTML from data, not when parsing or validating HTML files.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/red-cup-engineering/computer-serialized-content-engineering-services-section.git",
-    "directory": "services/html-engineering-services-section/services/html-document-render-service"
+    "url": "git+https://github.com/red-cup-engineering/html-document-render-service.git"
   },
   "engines": {
     "node": ">=22.18"
