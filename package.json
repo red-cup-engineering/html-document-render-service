@@ -42,5 +42,10 @@
     "typescript": "^5.8.0",
     "@red-cup-engineering/exact-number-data-service": "workspace:*"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
 }
