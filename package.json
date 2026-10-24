@@ -33,8 +33,8 @@
     "./package.json": "./package.json"
   },
   "dependencies": {
-    "@red-cup-engineering/css-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/json-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/css-services-section": "workspace:*",
+    "@red-cup-engineering/json-services-section": "workspace:*",
     "@red-cup-engineering/computer-data-engineering-services-section": "workspace:*"
   },
   "devDependencies": {
