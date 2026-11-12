@@ -45,7 +45,7 @@ declare module "@red-cup-engineering/css-services-section/css-style-resolution" 
     readonly valuation: CssVisualValuation<H>;
     readonly cascadeClosed: true;
     readonly idempotent: true;
-    readonly completionRegime: import("@red-cup-engineering/computer-data-engineering-services-section/closure-regime").ClosureRegimeName;
+    readonly completionRegime: import("@red-cup-engineering/metrologic/closure/regime").ClosureRegimeName;
   }
   export interface CssClassFactorMapWitness {
     readonly kind: "rendering.css_classes_are_factor_maps:witness";
