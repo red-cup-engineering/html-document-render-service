@@ -6,7 +6,7 @@
  *
  * Extracted from @red-cup-engineering/html-file-codec-service (src/html/index.mts),
  * which now re-exports this surface unchanged. Depends on
- * @red-cup-engineering/css-services-section by package name for the CSS system
+ * @red-cup-engineering/css-engineering-services-section by package name for the CSS system
  * and valuation it renders.
  */
 import {
@@ -20,12 +20,12 @@ import {
   type CssVisualValuation,
   type CssClassFactorMap,
   type CssSettleWitness,
-} from "@red-cup-engineering/css-services-section/css-style-resolution";
+} from "@red-cup-engineering/css-engineering-services-section/css-style-resolution";
 import {
   isClosureRegimeName,
   type ClosureRegimeName,
 } from "@red-cup-engineering/computer-data-engineering-services-section/closure-regime";
-import { canonical } from "@red-cup-engineering/json-services-section";
+import { canonical } from "@red-cup-engineering/json-engineering-services-section";
 
 /** A JSON value; the type json-services-section's canonical serialization admits. */
 type JsonValue = null | boolean | number | string | readonly JsonValue[] | { readonly [key: string]: JsonValue };

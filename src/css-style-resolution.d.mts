@@ -1,5 +1,5 @@
 // css-services-section ships plain .mjs without declarations; this states the surface this package takes from it.
-declare module "@red-cup-engineering/css-services-section/css-style-resolution" {
+declare module "@red-cup-engineering/css-engineering-services-section/css-style-resolution" {
   /** The carrier a CSS system styles: nodes addressed by id. */
   export interface CssCarrier {
     readonly kind: string;
