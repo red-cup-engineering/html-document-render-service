@@ -27,7 +27,7 @@ import {
 } from "@red-cup-engineering/computer-data-engineering-services-section/closure-regime";
 import { canonical } from "@red-cup-engineering/json-engineering-services-section";
 
-/** A JSON value; the type json-services-section's canonical serialization admits. */
+/** A JSON value; the type json-engineering-services-section's canonical serialization admits. */
 type JsonValue = null | boolean | number | string | readonly JsonValue[] | { readonly [key: string]: JsonValue };
 
 /* ── escape (local copy) ────────────────────────────────────────────────────
