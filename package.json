@@ -1,0 +1,48 @@
+{
+  "name": "@red-cup-engineering/html-document-render-service",
+  "version": "0.0.8-dev.0",
+  "type": "module",
+  "description": "Renders a carrier node tree with resolved CSS into a complete HTML document string. Use when producing styled HTML from data, not when parsing or validating HTML files.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/html-document-render-service.git"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "clean": "rm -rf dist .tmp/test-dist",
+    "check": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "npm run rebuild",
+    "rebuild": "npm run clean && npm run build"
+  },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@red-cup-engineering/metrologic": "^0.22.4",
+    "@red-cup-engineering/css-engineering-services-section": "^0.1.6",
+    "@red-cup-engineering/json-engine": "^0.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0"
+  },
+  "sideEffects": false,
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}
