@@ -22,7 +22,7 @@ import {
   type CssSettleWitness,
 } from "@red-cup-engineering/css-engineering-services-section/css-style-resolution";
 import {
-  isClosureRegimeName,
+  isClosureModeName,
   type ClosureRegimeName,
 } from "@red-cup-engineering/metrologic/closure/regime";
 import { canonical } from "@red-cup-engineering/json-engine";
@@ -298,8 +298,8 @@ export function buildHtmlDocumentPlan<H extends HtmlCarrierOf>(
   // completionRegime label. Every supported regime comes from the shared
   // Obsmetrologia closure vocabulary and the CSS owner's settling algorithm.
   const cssSettled = checkStyleResolutionSettled(system);
-  if (!isClosureRegimeName(cssSettled.completionRegime) ||
-      profile.allowedCompletionRegimes.some((mode) => !isClosureRegimeName(mode)) ||
+  if (!isClosureModeName(cssSettled.completionRegime) ||
+      profile.allowedCompletionRegimes.some((mode) => !isClosureModeName(mode)) ||
       !profile.allowedCompletionRegimes.includes(cssSettled.completionRegime)) {
     return renderFiberObstruction("completion-regime-not-allowed", cssSettled.completionRegime);
   }
