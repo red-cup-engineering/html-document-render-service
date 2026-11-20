@@ -299,7 +299,7 @@ export function buildHtmlDocumentPlan<H extends HtmlCarrierOf>(
   // Obsmetrologia closure vocabulary and the CSS owner's settling algorithm.
   const cssSettled = checkStyleResolutionSettled(system);
   if (!isClosureRegimeName(cssSettled.completionRegime) ||
-      profile.allowedCompletionRegimes.some((mode) => !isClosureRegimeName(mode)) ||
+      profile.allowedCompletionRegimes.some((regime) => !isClosureRegimeName(regime)) ||
       !profile.allowedCompletionRegimes.includes(cssSettled.completionRegime)) {
     return renderFiberObstruction("completion-regime-not-allowed", cssSettled.completionRegime);
   }
